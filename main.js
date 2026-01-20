@@ -5,6 +5,12 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 const controls = new OrbitControls( camera, renderer.domElement );
 const loader = new GLTFLoader();
 
+loader.load('E24_Wheels.gltf', function(gltf) {
+    scene.add(gltf.scene);
+}, undefined, function(error) {
+    console.error(error);
+});
+
 const scene = new THREE.Scene();
 
 //Field of view (FOV), aspect ratio, near and far (z-axis render window)
