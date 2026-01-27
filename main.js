@@ -17,7 +17,7 @@ document.body.appendChild(renderer.domElement);
 
 const controls = new OrbitControls( camera, renderer.domElement );
 
-loader.load('E24_Bodylines.gltf', function(gltf) {
+loader.load('/3D_Models/E24_Bodylines.gltf', function(gltf) {
     scene.add(gltf.scene);
 }, undefined, function(error) {
     console.error(error);
