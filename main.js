@@ -21,7 +21,7 @@ controls.update();
 
 //load and add gltf file to scene
 const gltfLoader = new GLTFLoader();
-  const obj = 'E24_Materials.gltf';
+  const obj = '/3D_Models/E24_Materials.gltf';
   gltfLoader.load(
     obj,
     (gltf) => {
